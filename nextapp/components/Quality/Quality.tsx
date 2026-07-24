@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import ScrollReveal from '@/components/ScrollReveal/ScrollReveal';
 import styles from './Quality.module.css';
 
@@ -9,7 +10,7 @@ const PRODUCTS = [
     tagVariant: 'tag--cherry' as const,
     icon: '☕',
     description:
-      'Fully washed Arabica processed at our Koru mill. Cherry is de-pulped, fermented, washed, and graded on raised drying beds — producing a clean, bright cup with clear origin character.',
+      'Fully  processed coffee at our kunyak mill. Cherry is de-pulped, fermented, washed, and graded on raised drying beds producing a clean, bright cup with clear origin character.',
     attrs: [
       'Wet-process / fully washed',
       'Traceable to pulping station',
@@ -24,7 +25,7 @@ const PRODUCTS = [
     tagVariant: 'tag--buni' as const,
     icon: '🫘',
     description:
-      'Naturally processed coffee dried whole in the cherry. The extended fermentation and slow drying develop winey, fruited, and heavier-bodied profiles prized in specialty markets.',
+      'Naturally processed coffee dried whole in the cherry. The extended fermentation and slow drying develop winey, fruited, and heavier bodied profiles prized in specialty markets.',
     attrs: [
       'Natural / dry-process method',
       'Dried whole cherry on beds',
@@ -45,10 +46,22 @@ export default function Quality() {
           <div className="section-divider" aria-hidden="true" />
           <h2>Two Distinct Origin Profiles</h2>
           <p>
-            We produce both fully washed and naturally processed coffee from the same
+            We produce and sell  naturally processed coffee from our
             highland farms  giving roasters and buyers genuine flexibility without
             sourcing from multiple origins.
           </p>
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <div className={styles.featuredImageWrapper}>
+            <Image 
+              src="/images/gallery-2.jpg"
+              alt="Drying Coffee Beans"
+              fill
+              sizes="(max-width: 768px) 100vw, 100vw"
+              className={styles.featuredImage}
+            />
+          </div>
         </ScrollReveal>
 
         <div className={styles.productGrid}>

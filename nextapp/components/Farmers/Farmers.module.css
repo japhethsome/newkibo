@@ -81,12 +81,43 @@
   margin-bottom: 0.5rem;
 }
 .stepContent p {
-  color: var(--parchment-2);
+  color: var(--ink-soft);
   font-size: 0.95rem;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
-@media (max-width: 760px) {
+.featuredImageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 21 / 9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin: 3rem 0;
+}
+
+.featuredImage {
+  object-fit: cover;
+  transition: transform 0.7s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.featuredImageWrapper:hover .featuredImage {
+  transform: scale(1.04);
+}
+
+@media (max-width: 900px) {
+  .featuredImageWrapper {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (max-width: 600px) {
+  .featuredImageWrapper {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (max-width: 900px) {
   .farmers {
     padding-block: 4rem;
   }

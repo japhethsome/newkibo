@@ -5,8 +5,8 @@ import ScrollReveal from '@/components/ScrollReveal/ScrollReveal';
 import styles from './Footer.module.css';
 
 const LOCATIONS = [
-  { icon: '', text: 'Koru, Kisumu County', sub: 'Central Mill & HQ' },
-  { icon: '', text: 'Kericho County' },
+  { icon: '', text: 'Kunyak-kericho county', sub: 'Central Mill & HQ' },
+  { icon: '', text: 'koru-kisumu County', sub: 'dry mill' },
   { icon: '', text: 'Nandi County' },
 ];
 
@@ -32,8 +32,8 @@ export default function Footer() {
               Kibochi Star Coffee Limited
             </div>
             <p>
-              Specialty coffee processor and trader operating a wet mill in Koru, Kisumu County.
-              We connect highland smallholder farmers to local and international markets.
+              Specialty coffee processor and trader operating a wet mill operating in kunyak-kericho county .
+
             </p>
           </div>
 
@@ -59,11 +59,11 @@ export default function Footer() {
             <ul>
               <li>
                 <span className={styles.icon} aria-hidden="true"></span>
-                <a href="mailto:info@kibochistarcoffee.co.ke">info@kibochistarcoffee.co.ke</a>
+                <a href="mailto:info@kibochistarcoffee.co.ke">info@kibochicoffee.co.ke</a>
               </li>
               <li>
                 <span className={styles.icon} aria-hidden="true"></span>
-                <a href="tel:+254700000000">+254 700 000 000</a>
+                <a href="tel:+254700000000">+254 722332383</a>
               </li>
             </ul>
           </div>
@@ -74,7 +74,7 @@ export default function Footer() {
         <div className={styles.bottom}>
           <p>© {year} Kibochi Star Coffee Limited. All rights reserved.</p>
           <p className={`mono ${styles.locations}`}>
-            Koru · Kericho · Kisumu · Nandi
+            · Kericho · Kisumu · Nandi
           </p>
         </div>
 

@@ -51,7 +51,7 @@ export default function Hero() {
 
         <ScrollReveal as="p" className={styles.summary}>
           Kibochi Star Coffee Limited processes and markets premium Arabica coffee
-          from smallholder farmers across three counties  from cherry to clean lot,
+          from farms across three counties  from cherry to clean lot,
           traceable and export ready.
         </ScrollReveal>
 

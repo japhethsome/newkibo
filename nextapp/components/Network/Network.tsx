@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import ScrollReveal from '@/components/ScrollReveal/ScrollReveal';
 import styles from './Network.module.css';
 
@@ -15,7 +16,7 @@ const COUNTIES = [
     tagVariant: 'tag--highland' as const,
     name: 'Kisumu',
     description:
-      'Home to our central mill at Koru — the processing and logistics anchor for the entire network. Kisumu station farmers deliver the highest cherry volumes per season.',
+      'Home to our wet mill at Koru. The processing and logistics anchor for the entire network. Kisumu station delivers the highest cherry volumes per season.',
     stat: 'Mill HQ at Koru · Lake Basin Environs',
   },
   {
@@ -57,6 +58,18 @@ export default function Network() {
             </ScrollReveal>
           ))}
         </div>
+
+        <ScrollReveal>
+          <div className={styles.featuredImageWrapper}>
+            <Image 
+              src="/images/gallery-3.jpg"
+              alt="Small Nursery"
+              fill
+              sizes="(max-width: 768px) 100vw, 100vw"
+              className={styles.featuredImage}
+            />
+          </div>
+        </ScrollReveal>
 
         {/* 11 Pulping Stations strip */}
         <ScrollReveal

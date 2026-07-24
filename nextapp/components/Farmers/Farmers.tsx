@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import ScrollReveal from '@/components/ScrollReveal/ScrollReveal';
 import styles from './Farmers.module.css';
 
@@ -30,10 +31,26 @@ export default function Farmers() {
           <div className="section-divider section-divider--light" aria-hidden="true" />
           <h2>From Farm Gate<br />to Export Lot</h2>
           <p>
-            Our collection system is designed around the smallholder farmer — minimising
-            transport distances, ensuring fair cherry pricing, and maintaining traceability
-            at every step.
+            Our collection system is designed to minimize transport distances, ensuring
+            efficient cherry collection while preserving freshness and quality. It
+            supports fair and transparent cherry pricing and maintains complete
+            traceability at every stage of the supply chain, from collection to
+            processing. This approach enhances operational efficiency, promotes
+            accountability, and ensures consistently high-quality coffee.
+
           </p>
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <div className={styles.featuredImageWrapper}>
+            <Image 
+              src="/images/gallery-1.jpg"
+              alt="Coffee Cherries"
+              fill
+              sizes="(max-width: 768px) 100vw, 100vw"
+              className={styles.featuredImage}
+            />
+          </div>
         </ScrollReveal>
 
         <ScrollReveal className={styles.steps}>
@@ -46,6 +63,18 @@ export default function Farmers() {
               </div>
             </div>
           ))}
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <div className={styles.featuredImageWrapper}>
+            <Image 
+              src="/images/gallery-5.jpg"
+              alt="Greenhouse"
+              fill
+              sizes="(max-width: 768px) 100vw, 100vw"
+              className={styles.featuredImage}
+            />
+          </div>
         </ScrollReveal>
 
       </div>

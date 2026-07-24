@@ -1,8 +1,9 @@
+import Image from 'next/image';
 import ScrollReveal from '@/components/ScrollReveal/ScrollReveal';
 import styles from './About.module.css';
 
 const SNAPSHOT_ROWS = [
-  { label: 'Mill Location', value: 'Koru, Kisumu County' },
+  { label: 'Mill Location', value: 'kunyak, kericho County' },
   { label: 'Pulping Stations', value: <><strong>11</strong> active stations</> },
   { label: 'Counties Served', value: 'Kericho · Kisumu · Nandi' },
   { label: 'Products', value: 'Clean Coffee · Buni Coffee' },
@@ -55,6 +56,18 @@ export default function About() {
           </ScrollReveal>
 
         </div>
+
+        <ScrollReveal>
+          <div className={styles.featuredImageWrapper}>
+            <Image
+              src="/images/gallery-4.jpg"
+              alt="Coffee Nursery"
+              fill
+              sizes="(max-width: 768px) 100vw, 100vw"
+              className={styles.featuredImage}
+            />
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );

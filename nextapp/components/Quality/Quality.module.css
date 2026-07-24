@@ -90,10 +90,43 @@
   color: var(--ink-soft);
 }
 .productAttrs li::before {
-  content: '—';
+  content: '•';
   font-family: var(--font-ibm-plex-mono), 'IBM Plex Mono', monospace;
   color: var(--buni);
   flex-shrink: 0;
+  margin-bottom: 0.6rem;
+}
+
+.featuredImageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 21 / 9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.featuredImage {
+  object-fit: cover;
+  transition: transform 0.7s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.featuredImageWrapper:hover .featuredImage {
+  transform: scale(1.04);
+}
+
+@media (max-width: 900px) {
+  .featuredImageWrapper {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (max-width: 600px) {
+  .featuredImageWrapper {
+    aspect-ratio: 4 / 3;
+  }
 }
 
 @media (max-width: 760px) {
