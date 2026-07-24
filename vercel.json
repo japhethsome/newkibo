@@ -1,3 +1,4 @@
 {
-  "rootDirectory": "nextapp"
+  "rootDirectory": "nextapp",
+  "framework": "nextjs"
 }
